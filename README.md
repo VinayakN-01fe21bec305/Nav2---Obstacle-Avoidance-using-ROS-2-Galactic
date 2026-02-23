@@ -44,7 +44,7 @@ The navigation framework is built on the ROS 2 Navigation2 stack:
 
 Install required dependencies:
 
-```bash
+
 sudo apt install ros-galactic-navigation2
 sudo apt install ros-galactic-nav2-bringup
 sudo apt install ros-galactic-turtlebot3*
@@ -62,7 +62,8 @@ Launch Navigation Stack
 ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True
 Run Path Execution Node
 ros2 run fixed_path_nav path_sender
-Path Configuration
+
+### **Path Configuration**
 
 The circular trajectory is defined inside:
 
@@ -70,9 +71,9 @@ path/circle_path.yaml
 
 Users can modify waypoint coordinates to change robot motion patterns.
 
-Obstacle Avoidance
+## **Obstacle Avoidance**
 
-Obstacle avoidance is handled by:
+**Obstacle avoidance is handled by:
 
 DWB local planner critics
 
@@ -100,12 +101,13 @@ Multi-robot cooperative navigation
 
 Learning-based path optimization
 
-Real-world deployment validation
+Real-world deployment validation**
 
-License
+**License
 
 This project is intended for academic and research demonstration purposes.
 
 Author
 
 Vinayak N Nayak
+**
