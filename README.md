@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates autonomous mobile robot navigation using the ROS 2 Navigation Stack. The robot follows a predefined circular trajectory stored in a YAML configuration file while performing real-time obstacle avoidance using the DWB local planner.
+This project demonstrates autonomous mobile robot navigation using ROS 2 Navigation Stack. The robot follows a predefined circular trajectory stored in a YAML configuration file while performing real-time obstacle avoidance using the DWB local planner.
 
 The system is implemented using:
 
@@ -42,38 +42,52 @@ The navigation framework is built on the ROS 2 Navigation2 stack:
 
 ### ROS Packages
 
-Install required dependencies:
+Install dependencies:
 
-
+```bash
 sudo apt install ros-galactic-navigation2
 sudo apt install ros-galactic-nav2-bringup
-sudo apt install ros-galactic-turtlebot3*
-sudo apt install ros-galactic-gazebo-ros-pkgs
-Workspace Setup
+sudo apt install ros-galactic-turtlebot3*## Workspace Setup
+
+Create workspace:
+
+```bash
 mkdir -p fixed_path_ws/src
 cd fixed_path_ws
 colcon build
 source install/setup.bash
+sudo apt install ros-galactic-gazebo-ros-pkgs
+
 Execution Steps
+
 Launch Simulation
+
+```bash
 export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
 Launch Navigation Stack
+
+```bash
 ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True
+
 Run Path Execution Node
+
+```bash
 ros2 run fixed_path_nav path_sender
 
-### **Path Configuration**
+Path Configuration
 
 The circular trajectory is defined inside:
 
+```bash
 path/circle_path.yaml
 
-Users can modify waypoint coordinates to change robot motion patterns.
+Modify waypoint coordinates to change robot motion pattern.
 
-## **Obstacle Avoidance**
+Obstacle Avoidance
 
-**Obstacle avoidance is handled by:
+Obstacle avoidance is handled by:
 
 DWB local planner critics
 
@@ -83,7 +97,7 @@ Real-time LiDAR scan processing
 
 Visualization
 
-The system can be monitored using RViz2:
+Monitor using RViz2:
 
 Map frame tracking
 
@@ -97,17 +111,13 @@ Future Improvements
 
 Dynamic obstacle prediction
 
-Multi-robot cooperative navigation
+Multi-robot navigation
 
 Learning-based path optimization
 
-Real-world deployment validation**
-
-**License
-
-This project is intended for academic and research demonstration purposes.
+Real-world deployment validation
 
 Author
 
 Vinayak N Nayak
-**
+
