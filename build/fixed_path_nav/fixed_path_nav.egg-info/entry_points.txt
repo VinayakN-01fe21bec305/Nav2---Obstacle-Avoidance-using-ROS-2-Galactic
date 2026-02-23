@@ -1,0 +1,3 @@
+[console_scripts]
+path_sender = fixed_path_nav.path_sender:main
+

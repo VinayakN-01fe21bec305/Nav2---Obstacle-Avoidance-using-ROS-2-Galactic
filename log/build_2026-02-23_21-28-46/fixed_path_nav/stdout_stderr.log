@@ -1,0 +1,29 @@
+running egg_info
+creating ../../build/fixed_path_nav/fixed_path_nav.egg-info
+writing ../../build/fixed_path_nav/fixed_path_nav.egg-info/PKG-INFO
+writing dependency_links to ../../build/fixed_path_nav/fixed_path_nav.egg-info/dependency_links.txt
+writing entry points to ../../build/fixed_path_nav/fixed_path_nav.egg-info/entry_points.txt
+writing requirements to ../../build/fixed_path_nav/fixed_path_nav.egg-info/requires.txt
+writing top-level names to ../../build/fixed_path_nav/fixed_path_nav.egg-info/top_level.txt
+writing manifest file '../../build/fixed_path_nav/fixed_path_nav.egg-info/SOURCES.txt'
+reading manifest file '../../build/fixed_path_nav/fixed_path_nav.egg-info/SOURCES.txt'
+writing manifest file '../../build/fixed_path_nav/fixed_path_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/vinnu/fixed_path_ws/build/fixed_path_nav/build
+creating /home/vinnu/fixed_path_ws/build/fixed_path_nav/build/lib
+creating /home/vinnu/fixed_path_ws/build/fixed_path_nav/build/lib/fixed_path_nav
+copying fixed_path_nav/__init__.py -> /home/vinnu/fixed_path_ws/build/fixed_path_nav/build/lib/fixed_path_nav
+copying fixed_path_nav/path_sender.py -> /home/vinnu/fixed_path_ws/build/fixed_path_nav/build/lib/fixed_path_nav
+running install
+running install_lib
+creating /home/vinnu/fixed_path_ws/install/fixed_path_nav/lib/python3.8/site-packages/fixed_path_nav
+copying /home/vinnu/fixed_path_ws/build/fixed_path_nav/build/lib/fixed_path_nav/__init__.py -> /home/vinnu/fixed_path_ws/install/fixed_path_nav/lib/python3.8/site-packages/fixed_path_nav
+copying /home/vinnu/fixed_path_ws/build/fixed_path_nav/build/lib/fixed_path_nav/path_sender.py -> /home/vinnu/fixed_path_ws/install/fixed_path_nav/lib/python3.8/site-packages/fixed_path_nav
+byte-compiling /home/vinnu/fixed_path_ws/install/fixed_path_nav/lib/python3.8/site-packages/fixed_path_nav/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/vinnu/fixed_path_ws/install/fixed_path_nav/lib/python3.8/site-packages/fixed_path_nav/path_sender.py to path_sender.cpython-38.pyc
+running install_egg_info
+Copying ../../build/fixed_path_nav/fixed_path_nav.egg-info to /home/vinnu/fixed_path_ws/install/fixed_path_nav/lib/python3.8/site-packages/fixed_path_nav-0.0.0-py3.8.egg-info
+running install_scripts
+Installing path_sender script to /home/vinnu/fixed_path_ws/install/fixed_path_nav/lib/fixed_path_nav
+writing list of installed files to '/home/vinnu/fixed_path_ws/build/fixed_path_nav/install.log'
