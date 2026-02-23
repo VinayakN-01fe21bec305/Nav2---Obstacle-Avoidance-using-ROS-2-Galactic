@@ -47,3 +47,4 @@ The navigation framework is built on the ROS 2 Navigation2 stack:
 - TurtleBot3 Simulation Packages
 
 ---
+![Demo Simulation](23.02.2026_22.19.56_REC-ezgif.com-video-to-gif-converter.gif)   
